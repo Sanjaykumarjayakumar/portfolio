@@ -209,3 +209,43 @@ html{
   justify-content: center;
   gap: 2%;
 }
+@media (max-width: 1024px) {
+  .one {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    gap: 30px;
+  }
+  .image img { width: 200px; height: 200px; }
+  .education-container { flex-direction: column; gap: 20px; }
+  .education-card { width: 100%; }
+  .project { width: 45%; }
+  .four { flex-wrap: wrap; gap: 20px; }
+}
+@media (max-width: 768px) {
+  .Nav { gap: 20px; padding: 8px 15px; }
+  .Nav a { font-size: medium; }
+
+  .one { margin-top: 80px; gap: 20px; text-align: center; }
+  .image { margin: 0; }
+  .Home h1 { font-size: 24px; }
+  .Home p { font-size: 16px; }
+
+  .skills { width: 45%; height: auto; padding: 10px; }
+  .frontendlanguages, .backendlanguages,
+  .programminglanguages, .othertools {
+    flex-wrap: wrap; justify-content: center;
+  }
+
+  .project { width: 100%; }
+  .four { flex-direction: column; gap: 15px; }
+}
+@media (max-width: 480px) {
+  .Nav { flex-direction: column; gap: 10px; padding: 5px; }
+  .one { margin-top: 50px; }
+  .image img { width: 150px; height: 150px; }
+  .Home h1 { font-size: 20px; }
+  .Home p { font-size: 14px; }
+  .skills, .card, .projects { width: 100%; }
+  .card, .projects { padding: 15px; }
+}
