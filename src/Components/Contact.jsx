@@ -6,6 +6,17 @@ const Contact = () => {
     <div id="contact">
     <div className="card">
       <h1>Contact</h1>
+      <div className="contactform">
+  <h2>Get Connected</h2>
+  <p>Name</p>
+  <input type="text" placeholder="Enter your name" />
+  <p>E-mail</p>
+  <input type="email" placeholder="Enter your email" />
+  <p>Description</p>
+  <input type="text" placeholder="Enter your message" />
+  <button>Connect</button>
+</div>
+
       <div className="contact-icons">
         <i className="fab fa-github fa-2x"></i>
         <i className="fab fa-instagram fa-2x"></i>

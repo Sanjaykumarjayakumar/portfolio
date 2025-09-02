@@ -102,7 +102,12 @@ html{
   border-radius: 10px;
   height: auto;
   width: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   line-height: 1px;
+}
+.education-card:hover {
+  transform: scale(0.9);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 .education-container{
   display: flex;
@@ -144,6 +149,7 @@ html{
   align-items: center;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   color: black;
   padding: 15px;
   border-radius: 10px;
@@ -151,6 +157,10 @@ html{
   height: 120px;
   text-align: center;
   gap: 6px; 
+}
+.skills:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 .skills h2 {
   font-size: 18px;
@@ -201,7 +211,12 @@ html{
   height: auto;
   width: 30%;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   gap: 6px; 
+}
+.project:hover {
+  transform: scale(0.9);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 .four{
   display: flex;
@@ -209,6 +224,51 @@ html{
   justify-content: center;
   gap: 2%;
 }
+.contactform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.contactform p {
+  align-self: flex-start;
+  margin: 5px 0 2px 0;
+  font-weight: bold;
+}
+
+.contactform input {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contactform button {
+  width: 100%;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contactform button:hover {
+  background-color: darkred;
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+}
+
 @media (max-width: 1024px) {
   .one {
     flex-direction: column;
