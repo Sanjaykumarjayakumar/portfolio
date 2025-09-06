@@ -340,3 +340,88 @@ html{
     margin-top: 10px;
   }
 }
+/* Education container and cards */
+.education-container {
+  display: flex;
+  flex-wrap: wrap;      /* Wrap on smaller devices */
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.education-card {
+  flex: 1 1 45%;        /* 2 cards per row on large devices */
+  max-width: 45%;
+  min-width: 280px;
+  margin: 10px;
+}
+
+/* Skills container and cards */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;      /* Wrap on smaller devices */
+  justify-content: center;
+  gap: 20px;
+}
+.skills {
+  flex: 1 1 160px;      /* 3-4 per row on large devices */
+  max-width: 200px;
+  margin: 10px;
+}
+
+/* Profile section */
+.one {
+  display: flex;
+  flex-wrap: wrap;      /* Stack on smaller devices */
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  text-align: center;
+}
+.image {
+  margin: 0;
+}
+.Home button {
+  display: inline-block;  /* Resume button next to content */
+  margin-left: 10px;
+}
+
+/* Navbar with Resume button inline */
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;       /* Keeps links + button in same row on smaller devices */
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Responsive tweaks for tablets and smaller screens */
+@media (max-width: 768px) {
+  .education-container {
+    flex-direction: column;  /* Stack cards vertically */
+    align-items: center;
+  }
+  .education-card {
+    width: 90%;
+    max-width: none;
+  }
+
+  .skills-container {
+    flex-direction: column;  /* Stack skills vertically */
+    align-items: center;
+  }
+  .skills {
+    width: 90%;
+    max-width: none;
+  }
+
+  .one {
+    flex-direction: column;  /* Profile photo above content */
+    text-align: center;
+  }
+
+  .Home button {
+    margin-left: 0;
+    margin-top: 10px;       /* Keep resume button nearby */
+  }
+}
+
