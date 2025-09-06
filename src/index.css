@@ -274,8 +274,17 @@ html{
   transform: scale(1.2);
   border-color: red;
 }
-/* Responsive tweaks */
-@media (max-width: 768px) {
+/* Responsive Styles */
+@media (max-width: 992px) {
+  /* Navbar with resume button below on tablets and smaller */
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .nav-container a button {
+    margin: 0;
+  }
 
   /* Profile section: image above content, centered */
   .one {
@@ -288,11 +297,10 @@ html{
     margin: 0;
   }
   .Home button {
-    display: block; /* Resume button below content */
-    margin: 10px 0 0 0;
+    margin-top: 10px;
   }
 
-  /* Education: cards stacked vertically */
+  /* Education: stack vertically */
   .education-container {
     flex-direction: column;
     align-items: center;
@@ -303,33 +311,30 @@ html{
     max-width: none;
   }
 
-  /* Skills: stacked vertically */
-  .skills-container {
+  /* Skills: stack vertically */
+  .skills-container,
+  .programminglanguages,
+  .frontendlanguages,
+  .backendlanguages,
+  .othertools {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
   }
   .skills {
     width: 90%;
     max-width: none;
   }
 
-  /* Projects: stacked vertically */
-  .projects {
+  /* Projects: stack one by one */
+  .four {
     flex-direction: column;
     align-items: center;
+    gap: 15px;
   }
   .project {
     width: 90%;
     max-width: none;
-    margin-bottom: 15px;
-  }
-
-  /* Navbar: stay in one line, wrap disabled */
-  .nav-container {
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 20px;
   }
 
   /* Contact form: centered */
@@ -338,13 +343,36 @@ html{
     max-width: 500px;
     margin: 0 auto;
   }
-
-  /* Contact icons: below form, centered */
   .contact-icons {
     margin-top: 15px;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 576px) {
+  .Home h1 {
+    font-size: 24px;
+  }
+  .Home p {
+    font-size: 16px;
+  }
+  .skills h2 {
+    font-size: 16px;
+  }
+  .skills p {
+    font-size: 12px;
+  }
+  .project h2 {
+    font-size: 18px;
+  }
+  .project p {
+    font-size: 14px;
+  }
+  .Nav a {
+    font-size: 14px;
   }
 }
