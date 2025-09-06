@@ -376,3 +376,22 @@ html{
     font-size: 14px;
   }
 }
+/* Education section responsive fix */
+.education-container {
+  display: flex;
+  flex-wrap: wrap; /* allow wrapping */
+  justify-content: center; /* center cards */
+  gap: 20px; /* space between cards */
+}
+
+.education-card {
+  width: 45%; /* smaller width on larger screens */
+  min-width: 280px; /* ensure it doesn't shrink too much */
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .education-card {
+    width: 90%; /* full width on tablets & mobile */
+  }
+}

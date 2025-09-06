@@ -12,17 +12,18 @@ const About = () => {
         </p>
         <h1>Education</h1>
         <div className="education-container">
-          <div className="education-card">
-            <h2>10th & 12th</h2>
-            <h3>Completed at: The Navodhaya Academy</h3>
-            <h3>Year: 2021 & 2023</h3>
-          </div>
-          <div className="education-card">
-            <h2>B.E Computer Science and Engineering</h2>
-            <h3>Completed at: Bannari Amman Institute of Technology</h3>
-            <h3>Year: 2027</h3>
-          </div>
-          </div>
+  <div className="education-card">
+    <h2>10th & 12th</h2>
+    <h3>Completed at: The Navodhaya Academy</h3>
+    <h3>Year: 2021 & 2023</h3>
+  </div>
+  <div className="education-card">
+    <h2>B.E Computer Science and Engineering</h2>
+    <h3>Completed at: Bannari Amman Institute of Technology</h3>
+    <h3>Year: 2027</h3>
+  </div>
+</div>
+
       </div>
     </div>
     </>
