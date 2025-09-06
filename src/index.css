@@ -1,36 +1,31 @@
-/* Global */
 body {
   background-color: #f9f9f9;
   font-family: Arial, sans-serif;
 }
-html {
+html{
   scroll-behavior: smooth;
 }
 
-/* Card */
 .card {
   display: flex;
+  margin-top: 20%;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.791);
   border-radius: 10px;
   padding: 20px;
   color: black;
-  margin: 50px auto 10px auto; /* replaced 20% with fixed margin */
+  margin: 10px auto;
   width: 90%;
   box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
 }
-
-/* Navbar */
 .nav-container {
   display: flex;
-  flex-wrap: wrap; /* keeps items in same row on smaller screens */
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 2%;
   position: sticky;
   top: 2%;
 }
-
 .Nav {
   display: flex;
   justify-content: center;
@@ -43,47 +38,40 @@ html {
   margin-top: 5px;
   width: fit-content;
 }
-
 .Nav a {
   text-decoration: none;
   font-size: large;
   color: black;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
-
-/* Profile section */
 .one {
   display: flex;
-  flex-wrap: wrap; /* wraps on smaller devices */
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  margin-top: 150px;
   gap: 50px;
-  text-align: center;
 }
-
 .image img {
   width: 250px;
   height: 250px;
   border-radius: 50%;
   object-fit: cover;
 }
-
+.image {
+  margin-right: 50px;
+}
 .Home h1 {
   font-size: 32px;
-  font-weight: bold;
   margin-top: 0;
+  font-weight: bold;
 }
-
-.Home p {
+.Home p{
   font-size: 20px;
   line-height: 1.5;
   margin-top: 10px;
 }
-
-.Home button {
-  display: inline-block; /* resume button next to content */
-  margin-left: 10px;
-  margin-top: 2px;
+.Home button{
   color: white;
   background-color: red;
   border-radius: 20px;
@@ -91,80 +79,97 @@ html {
   border: none;
   cursor: pointer;
   font-size: 16px;
+  margin-top: 2px;
 }
-
-.Home button:hover {
+.Home button:hover{
   background-color: darkred;
   transform: scale(1.05);
   transition: all 0.3s ease;
 }
-
-/* Education container */
-.education-container {
+.About {
   display: flex;
-  flex-wrap: wrap; /* wrap on smaller devices */
-  justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
+  flex-direction: row;
+  gap: 50px;
+  margin-top: 20px;
 }
-
 .education-card {
-  flex: 1 1 45%; /* 2 per row on large screens */
-  min-width: 280px;
-  max-width: 45%;
+  display: flex;
+  flex-direction: column;
   background-color: rgba(255, 255, 255, 0.856);
   box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-  margin: 10px;
+  margin-top: 5px;
   padding: 15px;
   border-radius: 10px;
+  height: auto;
+  width: 50%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  line-height: 1px;
 }
-
 .education-card:hover {
-  transform: scale(0.95);
+  transform: scale(0.9);
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
-
-/* Skills container */
-.skills-container {
+.education-container{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: row;
+}
+.card h1{
+  border-bottom: 2px solid red;
+  width: fit-content;
+  padding-bottom: 5px;
+}
+.programminglanguages {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
   gap: 20px;
 }
-
+.frontendlanguages{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 20px;
+}
+.backendlanguages{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 20px;
+}
+.othertools{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 20px;
+}
 .skills {
-  flex: 1 1 160px;
-  max-width: 200px;
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-  padding: 15px;
-  border-radius: 10px;
-  text-align: center;
-  gap: 6px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  width: 160px;
+  height: 120px;
+  text-align: center;
+  gap: 6px; 
 }
-
 .skills:hover {
   transform: scale(1.1);
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
-
 .skills h2 {
   font-size: 18px;
   margin: 0;
 }
-
 .skills p {
   font-size: 14px;
-  margin: 0;
+  margin: 0px;
 }
-
-/* Contact Icons */
 .contact-icons {
   display: flex;
   justify-content: center;
@@ -172,32 +177,28 @@ html {
   gap: 20px;
   margin-top: 15px;
 }
-
-.contact-icons a svg {
-  border: 2px solid #ccc;
-  border-radius: 100px;
-  padding: 8px;
+.contact-icons i,
+.contact-icons img {
+  cursor: pointer;
   transition: transform 0.3s ease;
 }
-
-.contact-icons a svg:hover {
+.contact-icons i:hover,
+.contact-icons img:hover {
   transform: scale(1.2);
-  border-color: red;
 }
-
-/* Projects */
-.projects {
+.projects{
   display: flex;
+  margin-top: 20%;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.791);
   border-radius: 10px;
   padding: 20px;
+  color: black;
   margin: 10px auto;
   width: 90%;
   box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
 }
-
-.project {
+.project{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -211,15 +212,18 @@ html {
   width: 30%;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  gap: 6px;
+  gap: 6px; 
 }
-
 .project:hover {
-  transform: scale(0.95);
+  transform: scale(0.9);
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
-
-/* Contact form */
+.four{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2%;
+}
 .contactform {
   display: flex;
   flex-direction: column;
@@ -232,13 +236,11 @@ html {
   border-radius: 10px;
   margin: 0 auto;
 }
-
 .contactform p {
   align-self: flex-start;
   margin: 5px 0 2px 0;
   font-weight: bold;
 }
-
 .contactform input {
   width: 100%;
   padding: 8px 10px;
@@ -247,7 +249,6 @@ html {
   border-radius: 5px;
   box-sizing: border-box;
 }
-
 .contactform button {
   width: 100%;
   padding: 10px;
@@ -258,27 +259,92 @@ html {
   cursor: pointer;
   font-size: 16px;
 }
-
 .contactform button:hover {
   background-color: darkred;
   transform: scale(1.03);
   transition: all 0.3s ease;
 }
-
-/* Responsive for tablets and phones */
+.contact-icons a svg {
+  border: 2px solid #ccc;
+  border-radius: 100px;
+  padding: 8px;
+  transition: transform 0.3s ease;
+}
+.contact-icons a svg:hover {
+  transform: scale(1.2);
+  border-color: red;
+}
+/* Responsive tweaks */
 @media (max-width: 768px) {
-  .education-container, .skills-container, .one {
+
+  /* Profile section: image above content, centered */
+  .one {
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .image {
+    margin: 0;
+  }
+  .Home button {
+    display: block; /* Resume button below content */
+    margin: 10px 0 0 0;
   }
 
-  .education-card, .skills {
+  /* Education: cards stacked vertically */
+  .education-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .education-card {
     width: 90%;
     max-width: none;
   }
 
-  .Home button {
-    margin-left: 0;
-    margin-top: 10px;
+  /* Skills: stacked vertically */
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .skills {
+    width: 90%;
+    max-width: none;
+  }
+
+  /* Projects: stacked vertically */
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project {
+    width: 90%;
+    max-width: none;
+    margin-bottom: 15px;
+  }
+
+  /* Navbar: stay in one line, wrap disabled */
+  .nav-container {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  /* Contact form: centered */
+  .contactform {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* Contact icons: below form, centered */
+  .contact-icons {
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
   }
 }
