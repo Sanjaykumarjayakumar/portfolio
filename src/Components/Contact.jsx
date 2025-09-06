@@ -1,6 +1,7 @@
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+import { MdEmail, MdPhone } from "react-icons/md";
 import { useState } from "react";
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import {SiLeetcode} from "react-icons/si"
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -71,13 +72,31 @@ const Contact = () => {
         </form>
 
         <div className="contact-icons">
-          <i className="fab fa-github fa-2x"></i>
-          <i className="fab fa-instagram fa-2x"></i>
-          <i className="fab fa-linkedin fa-2x"></i>
-          <a href="https://leetcode.com/your-username" target="_blank" rel="noreferrer">
-          <SiLeetcode/>
-          </a>
-        </div>
+  <a href="" target="_blank" rel="noopener noreferrer">
+    <FaGithub size={30} />
+  </a>
+
+  <a href="" target="_blank" rel="noopener noreferrer">
+    <SiLeetcode size={30} />
+  </a>
+
+  <a href="" target="_blank" rel="noopener noreferrer">
+    <FaInstagram size={30} />
+  </a>
+
+  <a href="">
+    <MdEmail size={30} />
+  </a>
+
+  <a href="" target="_blank" rel="noopener noreferrer">
+    <FaLinkedin size={30} />
+  </a>
+
+  <a href="">
+    <MdPhone size={30} />
+  </a>
+</div>
+
       </div>
     </div>
   );

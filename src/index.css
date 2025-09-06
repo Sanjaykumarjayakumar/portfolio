@@ -268,3 +268,92 @@ html{
   transform: scale(1.03);
   transition: all 0.3s ease;
 }
+.contact-icons a svg {
+  border: 2px solid #ccc;
+  border-radius: 100px;
+  padding: 8px;
+  transition: transform 0.3s ease;
+}
+
+.contact-icons a svg:hover {
+  transform: scale(1.2);
+  border-color: red;
+}
+/* Education Section */
+.education-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.education-card {
+  flex: 1 1 45%;
+  min-width: 280px;
+  margin: 10px;
+}
+
+/* Skills Section */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skills {
+  flex: 1 1 160px;
+  max-width: 200px;
+}
+
+/* Profile (Image + Content) */
+.one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.image {
+  margin: 0;
+}
+
+/* Button next to content */
+.Home button {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* Media Queries for smaller devices */
+@media (max-width: 768px) {
+  .education-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .education-card {
+    width: 90%;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills {
+    width: 90%;
+    max-width: none;
+  }
+
+  .one {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Home button {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
