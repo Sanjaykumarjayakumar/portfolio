@@ -236,13 +236,11 @@ html{
   border-radius: 10px;
   margin: 0 auto;
 }
-
 .contactform p {
   align-self: flex-start;
   margin: 5px 0 2px 0;
   font-weight: bold;
 }
-
 .contactform input {
   width: 100%;
   padding: 8px 10px;
@@ -251,7 +249,6 @@ html{
   border-radius: 5px;
   box-sizing: border-box;
 }
-
 .contactform button {
   width: 100%;
   padding: 10px;
@@ -262,7 +259,6 @@ html{
   cursor: pointer;
   font-size: 16px;
 }
-
 .contactform button:hover {
   background-color: darkred;
   transform: scale(1.03);
@@ -274,39 +270,31 @@ html{
   padding: 8px;
   transition: transform 0.3s ease;
 }
-
 .contact-icons a svg:hover {
   transform: scale(1.2);
   border-color: red;
 }
-/* Education Section */
 .education-container {
   display: flex;
   flex-direction: row;
   gap: 20px;
   flex-wrap: wrap;
 }
-
 .education-card {
   flex: 1 1 45%;
   min-width: 280px;
   margin: 10px;
 }
-
-/* Skills Section */
 .skills-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
-
 .skills {
   flex: 1 1 160px;
   max-width: 200px;
 }
-
-/* Profile (Image + Content) */
 .one {
   display: flex;
   align-items: center;
@@ -319,20 +307,15 @@ html{
 .image {
   margin: 0;
 }
-
-/* Button next to content */
 .Home button {
   display: inline-block;
   margin-left: 10px;
 }
-
-/* Media Queries for smaller devices */
 @media (max-width: 768px) {
   .education-container {
     flex-direction: column;
     align-items: center;
   }
-
   .education-card {
     width: 90%;
   }
