@@ -16,10 +16,12 @@ const App = () => {
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
           </div>
-          <a href="/resume.pdf" download="Sanjay_Resume.pdf">
+          <a href="resume.pdf" download="SanjayResume.pdf">
+            <div className="downloadresume">
             <button>
-              <i className="fas fa-download"></i> Resume
+              <i className="fas fa-download"></i>
             </button>
+            </div>
           </a>
         </div>
 

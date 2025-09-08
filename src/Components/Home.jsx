@@ -9,7 +9,7 @@ const Home = ()=>{
       <div className="Home">
         <h1>Sanjaykumar Jayakumar</h1>
         <p>A full stack developer,coder</p>
-            <button>Download Resume</button>
+        <a href="resume.pdf" download="SanjayResume.pdf">Download Resume</a>
       </div>
       </div>
     </>
